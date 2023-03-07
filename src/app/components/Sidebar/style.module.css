@@ -1,0 +1,89 @@
+.nav {
+    background: #0D1520;
+    width: 384px;
+    height: 100vh;
+    padding: 55px 0;
+    position: fixed;
+}
+
+.nav .logo {
+    display: flex;
+    gap: 11px;
+    margin-bottom: 25%;
+    justify-content: center;
+}
+
+.nav .logo h1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #00E5AA;
+}
+
+.pages{
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    margin-bottom: 30%;
+    margin-left: 97px;
+}
+
+.pages li {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+
+.pages a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #909090;
+    transition: 0;
+    width: fit-content;
+}
+
+.pages a:hover{
+    margin-left: 10px;
+    transition: .3s ease-out;
+}
+
+.pages a:hover *{
+    color: white;
+    stroke: white;
+}
+
+.pages .current svg path{
+    stroke: white;
+    color: white;
+}
+.current{
+    color: white;
+}
+
+.social_links {
+    display: flex;
+    gap: 26px;
+    justify-content: center;
+}
+
+.social_links .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 51.75px;
+    height: 51.75px;
+    background: #ededed33;
+    border-radius: 11.0893px;
+}
+
+.social_links .icon:hover *{
+    fill: #303030d5;
+}
+.icon:hover{
+    background: white;
+    transition: .6s ease;
+}
