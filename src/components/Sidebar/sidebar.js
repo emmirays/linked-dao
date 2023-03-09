@@ -4,6 +4,7 @@ import Link from "next/link";
 
 export default function Sidebar() {
   return (
+    <>
     <nav className={styles.nav}>
       <div className={styles.logo}>
         <Image src="/logo.svg" width={43} height={43} alt="logo" />
@@ -191,5 +192,6 @@ export default function Sidebar() {
         </a>
       </div>
     </nav>
+    </>
   );
 }
