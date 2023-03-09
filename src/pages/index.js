@@ -11,7 +11,7 @@ export default function Home() {
         <h1>The Future of Digital Technology</h1>
         <p>Unlock the power of Web2 and Web3 technologies with Linked DAO. Our cutting-edge blockchain-based project is dedicated to creating hybrid flagship products that seamlessly blend the best of both worlds.</p>
         <div className={styles.btnGroup}>
-          <button className={`${styles.button}`}>Learn more</button>
+          <button className={`${styles.button}`}>Light paper</button>
           <button className={`${styles.button} ${styles.greenBtn}`}>Join Discord</button>
         </div>
           <Image src="/Head.png" width={628} height={628} />
