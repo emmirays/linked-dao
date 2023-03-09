@@ -1,0 +1,57 @@
+.navbar {
+      padding: 50px 128px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.logoText {
+      color: #00e5aa;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 44px;
+      font-family: 'Open Sans';
+}
+
+.navbar ul,
+.navbar li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+}
+
+.navbar ul {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+}
+
+.navbar a {
+      text-decoration: none;
+      color: #fff;
+      font-family: 'Open Sans';
+      padding: 15px;
+      font-weight: 400;
+}
+
+.navbar a.active {
+      font-weight: 700;
+}
+
+.logo {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+}
+
+.navbar button {
+      padding: 16px 24px;
+      border-radius: 8px;
+      background-color: #fff;
+      font-family: 'Open Sans';
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 27px;
+      color: #061018;
+      cursor: pointer;
+}

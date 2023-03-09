@@ -1,0 +1,100 @@
+.heading {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      padding: 100px;
+}
+
+.container h1 {
+      font-family: 'Open Sans';
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 87px;
+      background: linear-gradient(90.07deg, #33EABB 30.93%, #AFF8F8 98.84%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+}
+
+.container p {
+      font-family: 'Open Sans';
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 33px;
+      text-align: center;
+      color: #FEFEFE;
+      max-width: 1000px;
+}
+
+.button {
+      font-family: 'Open Sans';
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33px;
+      color: #061018;
+      width: 203px;
+      height: 81px;
+      gap: 8px;
+      background: #FFFFFF;
+      border-radius: 8px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+}
+
+.btnGroup {
+      display: flex;
+      gap: 20px;
+}
+
+.greenBtn {
+      background: #00E5AA;
+}
+
+.heading img {
+      padding: 20px;
+}
+
+.myylink {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 130px;
+}
+
+.myylink .info {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      gap: 32px;
+}
+
+.myylink p {
+      text-align: left;
+}
+
+span.white {
+      color: #fff !important;
+}
+
+.community {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 100px;
+      gap: 32px;
+}
+
+.container h2 {
+      font-family: 'Open Sans';
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 65px;
+      color: #FFFFFF;
+}
