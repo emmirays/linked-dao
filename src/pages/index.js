@@ -14,11 +14,11 @@ export default function Home() {
           <button className={`${styles.button}`}>Light paper</button>
           <button className={`${styles.button} ${styles.greenBtn}`}>Join Discord</button>
         </div>
-          <Image src="/Head.png" width={628} height={628} />
+          <Image src="/Head.png" width={628} height={628} alt="" />
       </header>
       <div className={`${styles.container} ${styles.myylink}`}>
         <div className={styles.image}>
-          <Image src="/Myylink.png" width={694} height={427} />
+          <Image src="/Myylink.png" width={694} height={427} alt="" />
         </div>
         <div className={styles.info}>
           <h1><span className={styles.white}>Introducing</span> Myylink</h1>

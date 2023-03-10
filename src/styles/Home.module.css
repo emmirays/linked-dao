@@ -74,6 +74,10 @@
       gap: 32px;
 }
 
+.myylink .info h1{
+      font-size: 48px;
+}
+
 .myylink p {
       text-align: left;
 }
