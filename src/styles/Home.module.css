@@ -80,6 +80,8 @@
 
 span.white {
       color: #fff !important;
+      -webkit-text-fill-color: currentColor;
+      -webkit-text-fill-color: currentColor;
 }
 
 .community {

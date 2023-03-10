@@ -6,7 +6,7 @@ export default function Footer() {
       return (
             <footer className={styles.footer}>
                   <div className={styles.logo}>
-                        <Image src="/logo.svg" width={43} height={43} alt="logo" />
+                        <Image src="/logo-white.svg" width={43} height={43} alt="logo" />
                         <span className={styles.logoText}>LINKED DAO</span>
                   </div>
                   <div className={styles.foot}>
