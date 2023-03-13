@@ -2,10 +2,12 @@
 
 .footer {
       background-color: #050A0E;
-      padding: 50px 130px;
+      padding: 0 130px 0;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      flex-wrap: wrap;
+      padding-bottom: 50px;
 }
 
 .logoText {
@@ -20,11 +22,14 @@
       display: flex;
       align-items: center;
       gap: 16px;
+      padding-top: 50px;
 }
 
 .foot {
       display: flex;
       gap: 60px;
+      flex-wrap: wrap;
+      padding-top: 50px;
 }
 
 .links {
@@ -64,6 +69,7 @@
 .socialLinks {
       display: flex;
       gap: 20px;
+      flex-wrap: wrap;
 }
 
 .socialLinks a {
@@ -74,4 +80,23 @@
       display: flex;
       justify-content: center;
       align-items: center;
+}
+
+/*--------------
+  Resposive 
+----------------*/
+@media (max-width: 1280px) {
+      .footer {
+            padding: 0 100px 0;
+
+      }
+      .foot{
+            gap: 49px;
+      }
+}
+
+@media (max-width: 768px) {
+      .footer {
+            padding: 50px;
+      }
 }
