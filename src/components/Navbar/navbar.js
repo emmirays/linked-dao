@@ -19,10 +19,11 @@ export default function Navbar({ active, setActive }) {
       <button className={`${styles.btn} ${active && styles.active}`}>
         Join Discord
       </button>
-      <button
-        className={styles.burger}
-        onClick={() => setActive(!active)}
-      ></button>
+      <button className={styles.burger} onClick={() => setActive(!active)}>
+        <div className={styles.line}></div>
+        <div className={styles.line}></div>
+        <div className={styles.line}></div>
+      </button>
     </div>
   );
 }

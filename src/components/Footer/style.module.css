@@ -90,7 +90,8 @@
             padding: 0 100px 0;
 
       }
-      .foot{
+
+      .foot {
             gap: 49px;
       }
 }
@@ -98,5 +99,10 @@
 @media (max-width: 768px) {
       .footer {
             padding: 50px;
+      }
+
+      .socialLinks a {
+            height: 59px;
+            width: 59px;
       }
 }
