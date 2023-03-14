@@ -74,6 +74,7 @@
       background: transparent;
       border: none;
       width: 60px;
+      cursor: pointer;
 }
 .burger .line{
       width: 100%;

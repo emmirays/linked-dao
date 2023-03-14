@@ -133,7 +133,7 @@ span.white {
 
 @media (max-width: 768px) {
       .heading{
-            padding-top: 200px !important;
+            padding-top: 160px !important;
       }
       .container {
             padding: 50px;
