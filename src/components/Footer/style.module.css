@@ -98,7 +98,7 @@
 
 @media (max-width: 768px) {
       .footer {
-            padding: 50px;
+            padding-bottom: 50px;
       }
 
       .socials h3{
