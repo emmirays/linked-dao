@@ -94,6 +94,16 @@
       .navbar {
             padding: 50px 50px;
       }
+      .logo{
+            gap: 9px;
+      }
+      .navbar .logo .logoText{
+            font-size: 26px;
+      }
+      .navbar .logo img{
+            width: 39px;
+            height: 39px;
+      }
 }
 
 @media (max-width: 481px) {

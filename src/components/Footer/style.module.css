@@ -101,8 +101,22 @@
             padding: 50px;
       }
 
+      .socials h3{
+            font-size: 25px;
+      }
+
       .socialLinks a {
             height: 59px;
             width: 59px;
+      }
+      .logo{
+            gap: 9px;
+      }
+      .logo .logoText{
+            font-size: 26px;
+      }
+      .logo img{
+            width: 39px;
+            height: 39px;
       }
 }
