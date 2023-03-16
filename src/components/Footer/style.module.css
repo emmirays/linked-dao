@@ -98,7 +98,7 @@
 
 @media (max-width: 768px) {
       .footer {
-            padding-bottom: 50px;
+            padding: 0 50px 50px;
       }
 
       .socials h3{
@@ -112,6 +112,7 @@
       }
       .socialLinks a img{
             width: 18px;
+            height: auto;
       }
       .logo{
             gap: 9px;
@@ -122,5 +123,14 @@
       .logo img{
             width: 39px;
             height: 39px;
+      }
+}
+
+@media (max-width: 481px){
+      .footer {
+            padding: 0 20px 50px;
+      }
+      .footer .socialLinks{
+            gap: 10px;
       }
 }

@@ -80,3 +80,7 @@
 .form .btn:disabled {
     background: rgba(0, 229, 170, 0.1);
 }
+
+@media (max-width: 1280px){
+    
+}
