@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Sidebar from "@/components/Sidebar/sidebar";
 import styles from "src/styles/Snapshots.module.css";
-import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 export default function Snapshots() {
   return (
@@ -14,28 +13,20 @@ export default function Snapshots() {
       </Head>
       <main className={styles.main}>
         <Sidebar />
-        <div className={styles.div}>
-        </div>
-        <div className={styles.mainBody}>
-        <div className={styles.header}>
-        <div className="cButton"><ConnectButton/></div>
-        </div>
-        <div className={styles.content}>
+        <div className={styles.div}></div>
         <form className={styles.form}>
           <div className={styles.field}>
             <label>Snap Token</label>
-            <input type="text" placeholder="Enter Contract Address" required />
+            <input type="text" placeholder="Enter Contact Address" required />
           </div>
           <div className={styles.field}>
             <label>Air drop Token</label>
-            <input type="text" placeholder="Enter Contract Address" required />
+            <input type="text" placeholder="Enter Contact Address" required />
           </div>
           <button disabled className={styles.btn}>
             Run Snapshot
           </button>
         </form>
-        </div>
-        </div>
       </main>
     </>
   );
