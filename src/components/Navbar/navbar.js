@@ -5,20 +5,22 @@ import Image from "next/image";
 export default function Navbar({ active, setActive }) {
   return (
     <div className={styles.navbar}>
-      <div className={styles.logo}>
+      <Link href="/" className={styles.logo}>
         <Image src="/logo.svg" width={43} height={43} alt="logo" />
         <span className={styles.logoText}>LINKED DAO</span>
-      </div>
+      </Link>
       <div className={`${styles.navLinks} ${active && styles.active}`}>
-        <Link className={styles.active} href="/">
+        <Link className={styles.active} href="#">
           Home
         </Link>
-        <Link href="/">About Us</Link>
-        <Link href="/">Contact Us</Link>
+        <Link href="#">About Us</Link>
+        <Link href="#">Contact Us</Link>
       </div>
-      <button className={`${styles.btn} ${active && styles.active}`}>
-        Join Discord
-      </button>
+      <Link href="#">
+        <button className={`${styles.btn} ${active && styles.active}`}>
+          Join Discord
+        </button>
+      </Link>
       <button className={styles.burger} onClick={() => setActive(!active)}>
         <div className={styles.line}></div>
         <div className={styles.line}></div>

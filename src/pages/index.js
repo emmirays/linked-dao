@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Navbar from "@/components/Navbar/navbar";
 import styles from "src/styles/Home.module.css";
+import Link from "next/link";
 import Image from "next/image";
 import Footer from "@/components/Footer/footer";
 import { useState } from "react";
@@ -9,7 +10,7 @@ export default function Home() {
   const [active, setActive] = useState(false);
   const removeNavbar = () => {
     setActive(false);
-  }
+  };
 
   return (
     <>
@@ -20,7 +21,10 @@ export default function Home() {
         <link rel="icon" href="/logo.svg" />
       </Head>
       <Navbar active={active} setActive={setActive} />
-      <header className={`${styles.heading} ${styles.container}`} onClick={removeNavbar}>
+      <header
+        className={`${styles.heading} ${styles.container}`}
+        onClick={removeNavbar}
+      >
         <h1>The Future of Digital Technology</h1>
         <p>
           Unlock the power of Web2 and Web3 technologies with Linked DAO. Our
@@ -28,14 +32,21 @@ export default function Home() {
           flagship products that seamlessly blend the best of both worlds.
         </p>
         <div className={styles.btnGroup}>
-          <button className={`${styles.button}`}>Light paper</button>
-          <button className={`${styles.button} ${styles.greenBtn}`}>
-            Join Discord
-          </button>
+          <Link href="#">
+            <button className={`${styles.button}`}>Light paper</button>
+          </Link>
+          <Link href="#">
+            <button className={`${styles.button} ${styles.greenBtn}`}>
+              Join Discord
+            </button>
+          </Link>
         </div>
         <Image src="/Head.png" width={628} height={628} alt="" />
       </header>
-      <div className={`${styles.container} ${styles.myylink}`} onClick={removeNavbar}>
+      <div
+        className={`${styles.container} ${styles.myylink}`}
+        onClick={removeNavbar}
+      >
         <div className={styles.image}>
           <Image src="/Myylink.png" width={694} height={427} alt="" />
         </div>
@@ -47,10 +58,13 @@ export default function Home() {
             The Ultimate Social and Link Optimizing Platform Say goodbye to the
             hassle of managing multiple social accounts.{" "}
           </p>
-          <button className={styles.button}>Learn more</button>
+          <Link href="#"><button className={styles.button}>Learn more</button></Link>
         </div>
       </div>
-      <div className={`${styles.community} ${styles.container}`} onClick={removeNavbar}>
+      <div
+        className={`${styles.community} ${styles.container}`}
+        onClick={removeNavbar}
+      >
         <h2>Join Our Community Today</h2>
         <p>
           Experience the future of digital technology with Linked DAO. Join our
@@ -58,7 +72,7 @@ export default function Home() {
           the next level. Discover the power of Myylink and unlock the full
           potential of your online identity
         </p>
-        <button className={styles.button}>Join Discord</button>
+        <Link href="#"><button className={styles.button}>Join Discord</button></Link>
       </div>
       <Footer removeNavbar={removeNavbar} />
     </>

@@ -5,10 +5,10 @@ import styles from "./style.module.css";
 export default function Footer({ removeNavbar }) {
   return (
     <footer className={styles.footer} onClick={removeNavbar}>
-      <div className={styles.logo}>
+      <Link href="/" className={styles.logo}>
         <Image src="/logo-white.svg" width={43} height={43} alt="logo" />
         <span className={styles.logoText}>LINKED DAO</span>
-      </div>
+      </Link>
       <div className={styles.foot}>
         <div className={styles.links}>
           <ul>
