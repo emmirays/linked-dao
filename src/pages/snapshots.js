@@ -1,8 +1,14 @@
 import Head from "next/head";
 import Sidebar from "@/components/Sidebar/sidebar";
 import styles from "src/styles/Snapshots.module.css";
+import { useState } from "react";
 
 export default function Snapshots() {
+  const [active, setActive] = useState(false);
+  const removeNavbar = () => {
+    setActive(false);
+  };
+
   return (
     <>
       <Head>
@@ -11,10 +17,10 @@ export default function Snapshots() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.svg" />
       </Head>
-      <main className={styles.main}>
-        <Sidebar />
+      <main className={styles.main} >
+        <Sidebar active={active} setActive={setActive} />
         <div className={styles.div}></div>
-        <form className={styles.form}>
+        <form className={styles.form} onClick={removeNavbar}>
           <div className={styles.field}>
             <label>Snap Token</label>
             <input type="text" placeholder="Enter Contact Address" required />

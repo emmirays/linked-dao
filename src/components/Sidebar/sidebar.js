@@ -2,10 +2,14 @@ import Image from "next/image";
 import styles from "./style.module.css";
 import Link from "next/link";
 
-export default function Sidebar() {
+export default function Sidebar({ active, setActive }) {
   return (
     <>
-    <nav className={styles.nav}>
+    <div className={styles.logo_sm}>
+        <Image src="/logo.svg" width={43} height={43} alt="logo" />
+        <h1>LINKED DAO</h1>
+      </div>
+    <nav className={`${styles.nav} ${active && styles.active}`}>
       <div className={styles.logo}>
         <Image src="/logo.svg" width={43} height={43} alt="logo" />
         <h1>LINKED DAO</h1>
@@ -146,7 +150,7 @@ export default function Sidebar() {
       </ul>
 
       <div className={styles.social_links}>
-        <a href="#" className={styles.icon}>
+        <a href="#" title="Twitter" className={styles.icon}>
           <svg
             width="20"
             height="16"
@@ -160,7 +164,7 @@ export default function Sidebar() {
             />
           </svg>
         </a>
-        <a href="#" className={styles.icon}>
+        <a href="#" title="Discord" className={styles.icon}>
           <svg
             width="19"
             height="13"
@@ -176,7 +180,7 @@ export default function Sidebar() {
             />
           </svg>
         </a>
-        <a href="#" className={styles.icon}>
+        <a href="#" title="Telegram" className={styles.icon}>
           <svg
             width="18"
             height="17"
@@ -192,6 +196,11 @@ export default function Sidebar() {
         </a>
       </div>
     </nav>
+    <button className={styles.burger} onClick={() => setActive(!active)}>
+        <div className={styles.line}></div>
+        <div className={styles.line}></div>
+        <div className={styles.line}></div>
+      </button>
     </>
   );
 }
