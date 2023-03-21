@@ -2,14 +2,18 @@
 
 .main {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .form {
-    margin: 0 auto;
-    padding: 32px 24px;
+    margin: 150px auto;
     width: 755px;
-    height: 429px;
+}
+
+.form .top {
+    padding: 32px 24px;
+    width: 100%;
+    height: fit-content;
     background: #1B242B;
     border-radius: 8px;
 }
@@ -17,7 +21,6 @@
 .header {
     margin: 0 auto;
     padding: 32px 24px;
-    width: 755px;
     display: flex;
     justify-content: center;
 }
@@ -45,7 +48,7 @@
     margin-bottom: 32px;
 }
 
-.form .field label {
+.form label {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
@@ -61,12 +64,11 @@
     border: 2px solid #636F80;
     border-radius: 8px;
     padding: 0 32px;
-
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    color: #636F80;
+    color: #EBEDEE;
 }
 
 .form .field input:active {
@@ -91,7 +93,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    color: #FFFFFF;
+    color: #061018;
 }
 
 .form .btn:active {
@@ -103,10 +105,134 @@
     background: rgba(0, 229, 170, 0.1);
 }
 
+.form .balance .con {
+    margin-top: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form .balance .con .side {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.form .balance .con .side p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #F9FDFF;
+}
+
+.form .history {
+    margin-top: 32px;
+}
+
+.form .history .head {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.form .history .head p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #EBEDEE;
+}
+
+.form .history .head .download {
+    display: flex;
+    gap: 8px;
+}
+
+.form .history .head .download button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    background: #323234;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.form .addresses {
+    overflow-y: scroll;
+    height: 279px;
+}
+
+.form .bottom {
+    margin-top: 32px;
+    padding: 32px 24px;
+    width: 100%;
+    height: fit-content;
+    background: #1B242B;
+    border-radius: 8px;
+}
+
+.form .total .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.form .total .dot {
+    font-size: 50px;
+    font-weight: 700;
+    color: #B3BECD;
+}
+
+.form .total .flex .field {
+    max-width: 338px;
+    margin-bottom: 16px;
+}
+
+.form .total .flex .field input {
+    font-size: 32px;
+    color: #EBEDEE;
+}
+
+.form .total .total_airdrop {
+    margin-bottom: 32px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.form .total .total_airdrop h1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 65px;
+    color: #EBEDEE;
+}
+
+.form .total .total_airdrop p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
 @media (max-width: 1156px) {
     .form {
         width: fit-content;
-
     }
 }
 
@@ -115,8 +241,9 @@
         width: 1%;
     }
 
-    .form {
+    .form,
+    .top,
+    .bottom {
         width: 90%;
-
     }
 }

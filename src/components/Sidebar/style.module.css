@@ -8,7 +8,7 @@
     position: fixed;
 }
 
- .logo_sm {
+.logo_sm {
     display: flex;
     gap: 11px;
     margin-bottom: 25%;
@@ -18,7 +18,7 @@
     left: 15px;
 }
 
- .logo_sm h1 {
+.logo_sm h1 {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -26,6 +26,7 @@
     line-height: 44px;
     color: #00E5AA;
 }
+
 .nav .logo {
     display: flex;
     gap: 11px;
@@ -143,7 +144,9 @@
 
 @media (max-width:900px) {
     .nav {
-        display: none;
+        display: block;
+        transform: translateX(-100%);
+
     }
 
     .burger {
@@ -151,8 +154,12 @@
     }
 
     .nav.active {
+        transition: 0.5s ease-in-out;
+        transform: translateX(0);
         display: block;
     }
+
+
 }
 
 @media (max-height: 600px) {
@@ -165,11 +172,12 @@
     }
 }
 
-@media (min-width: 463px){
-    .burger{
+@media (min-width: 463px) {
+    .burger {
         right: 35px;
     }
-    .logo_sm{
+
+    .logo_sm {
         left: 45px;
     }
 }
@@ -189,6 +197,7 @@
         margin-left: 20px;
         gap: 10px;
     }
+
     .logo_sm h1 {
         font-size: 26px;
     }
