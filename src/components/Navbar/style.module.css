@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 
 .navbar {
-      padding: 50px 128px;
+      padding: 14px 128px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
