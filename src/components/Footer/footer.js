@@ -41,9 +41,6 @@ export default function Footer({ removeNavbar }) {
               <Image src="/Twitter.svg" width={24} height={24} alt="" />
             </Link>
             <Link href="#">
-              <Image src="/instagram.svg" width={24} height={24} alt="" />
-            </Link>
-            <Link href="#">
               <Image src="/Discord.svg" width={24} height={24} alt="" />
             </Link>
             <Link href="#">
