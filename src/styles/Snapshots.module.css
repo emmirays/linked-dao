@@ -44,6 +44,12 @@
     height: 100vh;
 }
 
+@media (max-width:1132px) {
+    .div {
+        width: 45%;
+    }
+}
+
 .form .field {
     margin-bottom: 32px;
 }
@@ -173,6 +179,25 @@
     height: 279px;
 }
 
+.form .addresses::-webkit-scrollbar {
+    width: 20px;
+    background: #061018;
+}
+
+.form .addresses {
+    scrollbar-width: thin;
+    scrollbar-color: #061018;
+}
+
+.form .addresses:-webkit-scrollbar-track {
+    background: #061018;
+}
+
+.form .addresses::-webkit-scrollbar-thumb {
+    background: #515153;
+    border: 4px solid #061018;
+}
+
 .form .bottom {
     margin-top: 32px;
     padding: 32px 24px;
@@ -245,5 +270,32 @@
     .top,
     .bottom {
         width: 90%;
+    }
+}
+
+@media (max-width:481px) {
+
+    .field label,
+    .field input,
+    .balance label,
+    .balance .side p, .history .head p, .total .total_airdrop p {
+        font-size: 16px !important;
+    }
+    .total .flex{
+        flex-wrap: wrap;
+    }
+    .total .flex .dot{
+        display: none;
+    }
+    .total .total_airdrop{
+        margin-bottom: 20px !important;
+    }
+    .total .total_airdrop h1{
+        font-size: 34px !important;
+        line-height: 40px !important;
+    }
+    .history .head{
+        flex-wrap: wrap;
+        gap: 10px;
     }
 }
