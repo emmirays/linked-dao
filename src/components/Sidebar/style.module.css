@@ -14,7 +14,7 @@
     margin-bottom: 25%;
     justify-content: center;
     position: absolute;
-    top: 53px;
+    top: 29px;
     left: 15px;
 }
 
@@ -133,8 +133,8 @@
 .burger {
     display: none;
     position: absolute;
-    top: 53px;
-    right: 10px;
+    top: 31px;
+    right: 22px;
     width: 50px;
     background: #00E5AA;
     padding: 10px;
