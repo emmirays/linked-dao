@@ -21,3 +21,58 @@ body {
   overflow-x: hidden;
   background: #061018;
 }
+
+.notfound{
+  padding: 150px 20px;
+  height: 72.97vh;
+  text-align: center;
+}
+
+.notfound h1{
+  font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.notfound .FOF{
+  margin: 0;
+  font-size: 80px;
+}
+
+.notfound .green{
+  color: #00e5aa;
+  font-size: 120px;
+}
+
+.notfound p{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.notfound a{
+  color: #00e5aa;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .notfound{
+    padding-top: 130px;
+  }
+}
+
+@media (max-width: 481px) {
+  .notfound h1{
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  .notfound p{
+    font-size: 16px;
+  }
+}

@@ -10,11 +10,11 @@ export default function Navbar({ active, setActive }) {
         <span className={styles.logoText}>LINKED DAO</span>
       </Link>
       <div className={`${styles.navLinks} ${active && styles.active}`}>
-        <Link className={styles.active} href="#">
+        <Link className={styles.active} href="/">
           Home
         </Link>
-        <Link href="#">About Us</Link>
-        <Link href="#">Contact Us</Link>
+        <Link href="/null">About Us</Link>
+        <Link href="/null">Contact Us</Link>
       </div>
       <Link href="#">
         <button className={`${styles.btn} ${active && styles.active}`}>
