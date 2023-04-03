@@ -6,10 +6,10 @@ export default function Address() {
     <>
       <div className={styles.address}>
         <div className={styles.flex}>
-          <Image src="/avatar.svg" width={32} height={32} alt="" />
+          <Image src="/avatar.svg" width={32} height={32} priority={100} quality={100} alt="" />
           <p>Oxwi14 hkb3hvd8b2chjshdvbhwiv23fd</p>
         </div>
-        <Image width={32} height={32} priority quality={90} src="/link.svg" alt="" />
+        <Image width={32} height={32} priority={100} quality={100} src="/link.svg" alt="" />
       </div>
     </>
   );

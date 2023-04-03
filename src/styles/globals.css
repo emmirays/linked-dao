@@ -1,3 +1,7 @@
+/* ------------------------
+  General Styles 
+---------------------------*/
+
 :root {
 
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -21,6 +25,10 @@ body {
   overflow-x: hidden;
   background: #061018;
 }
+
+/* ------------------------
+  404 Page 
+---------------------------*/
 
 .notfound{
   padding: 150px 20px;
