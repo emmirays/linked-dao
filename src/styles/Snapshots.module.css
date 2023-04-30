@@ -6,8 +6,13 @@
 }
 
 .form {
-    margin: 150px auto;
+    margin: 90px auto;
     width: 755px;
+}
+
+.mainContainer{
+    margin: 50px auto;
+    width: 100%;
 }
 
 .form .top {
@@ -25,6 +30,9 @@
     justify-content: center;
 }
 
+
+
+
 .mainBody {
     width: 100%;
     height: 755px;
@@ -37,6 +45,9 @@
 
 .cButton {
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .div {
@@ -270,6 +281,12 @@
     .top,
     .bottom {
         width: 90%;
+    }
+    .mainContainer{
+        margin-top: 120px;
+    }
+    .form{
+        margin-top: 40px;
     }
 }
 

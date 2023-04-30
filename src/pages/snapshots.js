@@ -4,6 +4,7 @@ import styles from "src/styles/Snapshots.module.css";
 import Image from "next/image";
 import { useState } from "react";
 import Address from "@/components/address/address";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 export default function Snapshots() {
   const [active, setActive] = useState(false);
@@ -22,15 +23,17 @@ export default function Snapshots() {
       <main className={styles.main}>
         <Sidebar active={active} setActive={setActive} />
         <div className={styles.div}></div>
+        <div className={styles.mainContainer}>
+        <div className={styles.cButton}><ConnectButton/></div>
         <form className={styles.form} onClick={removeNavbar}>
           <div className={styles.top}>
             <div className={styles.field}>
               <label>Snap Token</label>
-              <input type="text" placeholder="Enter Contact Address" required />
+              <input type="text" placeholder="Enter Contract Address" required />
             </div>
             <div className={styles.field}>
               <label>Air drop Token</label>
-              <input type="text" placeholder="Enter Contact Address" required />
+              <input type="text" placeholder="Enter Contract Address" required />
             </div>
             <div className={styles.balance}>
               <div className={styles.con}>
@@ -108,6 +111,7 @@ export default function Snapshots() {
             <button className={styles.btn}>Approve Airdrop</button>
           </div>
         </form>
+        </div>
       </main>
     </>
   );
