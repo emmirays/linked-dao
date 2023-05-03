@@ -15,7 +15,7 @@
       font-weight: 700;
       font-size: 32px;
       line-height: 44px;
-      font-family: 'Open Sans';
+      font-family: 'Open Sans', Arial, sans-serif;
 }
 
 .logo {
@@ -44,7 +44,7 @@
 }
 
 .links ul a {
-      font-family: 'Open Sans';
+      font-family: 'Open Sans', Arial, sans-serif;
       font-weight: 400;
       font-size: 16px;
       line-height: 22px;
@@ -59,7 +59,7 @@
 }
 
 .socials h3 {
-      font-family: 'Open Sans';
+      font-family: 'Open Sans', Arial, sans-serif;
       font-weight: 700;
       font-size: 26px;
       line-height: 35px;

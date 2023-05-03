@@ -23,7 +23,7 @@
       font-weight: 700;
       font-size: 32px;
       line-height: 44px;
-      font-family: 'Open Sans';
+      font-family: 'Open Sans', Arial, sans-serif;
 }
 
 .navbar ul,
@@ -42,7 +42,7 @@
 .navbar a {
       text-decoration: none;
       color: #fff;
-      font-family: 'Open Sans';
+      font-family: 'Open Sans', Arial, sans-serif;
       padding: 15px;
       font-weight: 400;
 }
@@ -61,7 +61,7 @@
       padding: 16px 24px;
       border-radius: 8px;
       background-color: #fff;
-      font-family: 'Open Sans';
+      font-family: 'Open Sans', Arial, sans-serif;
       font-weight: 700;
       font-size: 20px;
       line-height: 27px;

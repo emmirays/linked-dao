@@ -1,8 +1,19 @@
 import Head from "next/head";
 import Layout from "@/components/Layout";
 import Link from "next/link";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 export default function NotFound() {
+
+    // Redirecting Users
+    const router = useRouter();
+    useEffect(() => {
+      setTimeout(() => {
+        router.push('/')
+      }, 3000)
+    }, [])
+
   return (
     <Layout>
       <Head>

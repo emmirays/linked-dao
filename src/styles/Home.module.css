@@ -11,7 +11,7 @@
 }
 
 .container h1 {
-      font-family: 'Open Sans';
+      font-family: 'Open Sans', Arial, sans-serif;
       font-weight: 700;
       font-size: 64px;
       line-height: 87px;
@@ -24,7 +24,7 @@
 }
 
 .container p {
-      font-family: 'Open Sans';
+      font-family: 'Open Sans', Arial, sans-serif;
       font-weight: 400;
       font-size: 24px;
       line-height: 33px;
@@ -34,7 +34,7 @@
 }
 
 .button {
-      font-family: 'Open Sans';
+      font-family: 'Open Sans', Arial, sans-serif;
       font-weight: 700;
       font-size: 24px;
       line-height: 33px;
@@ -103,7 +103,7 @@ span.white {
 }
 
 .container h2 {
-      font-family: 'Open Sans';
+      font-family: 'Open Sans', Arial, sans-serif;
       font-weight: 700;
       font-size: 48px;
       line-height: 65px;

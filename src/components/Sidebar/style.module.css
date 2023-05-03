@@ -6,20 +6,20 @@
     height: 100vh;
     padding: 55px 0;
     position: fixed;
+    z-index: 9;
 }
 
 .logo_sm {
     display: flex;
     gap: 11px;
-    margin-bottom: 25%;
     justify-content: center;
     position: absolute;
-    top: 29px;
+    top: 36px;
     left: 15px;
 }
 
 .logo_sm h1 {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -35,7 +35,8 @@
 }
 
 .nav .logo h1 {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', Arial, sans-serif;
+
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -58,7 +59,7 @@
 }
 
 .pages a {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -139,10 +140,15 @@
     background: #00E5AA;
     padding: 10px;
     border-radius: 5px;
+    z-index: 11;
 }
 
 
 @media (max-width:900px) {
+    .nav .logo {
+        transform: translateY(-21px);
+    }
+
     .nav {
         display: block;
         transform: translateX(-100%);
@@ -183,7 +189,11 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
+    .nav {
+        width: 325px;
+    }
+
     .nav .logo h1 {
         font-size: 26px;
     }
