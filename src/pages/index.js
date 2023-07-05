@@ -1,4 +1,4 @@
-oimport Head from "next/head";
+import Head from "next/head";
 import Navbar from "@/components/Navbar/navbar";
 import styles from "src/styles/Home.module.css";
 import Link from "next/link";
