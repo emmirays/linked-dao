@@ -1,4 +1,4 @@
-import Head from "next/head";
+oimport Head from "next/head";
 import Navbar from "@/components/Navbar/navbar";
 import styles from "src/styles/Home.module.css";
 import Link from "next/link";
@@ -56,7 +56,7 @@ export default function Home() {
           </h1>
           <p>
             The Ultimate Social and Link Optimizing Platform Say goodbye to the
-            hassle of managing multiple social accounts.{" "}
+            hassle of managing multiple social accounts.
           </p>
           <Link href="#"><button className={styles.button}>Learn more</button></Link>
         </div>
